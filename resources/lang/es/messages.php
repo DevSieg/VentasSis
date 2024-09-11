@@ -21,6 +21,7 @@ return [
     'add_customer' => 'Agregar Cliente',
     'create_invoice' => 'Crear Factura',
     'search_product' => 'Buscar producto',
+    'select_customer' => 'Selecciona cliente',
 
     // Orders
     'pending_order_list' => 'Lista de Pedidos Pendientes',

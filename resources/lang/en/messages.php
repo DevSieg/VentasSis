@@ -21,6 +21,7 @@ return [
     'add_customer' => 'Add Customer',
     'create_invoice' => 'Create Invoice',
     'search_product' => 'Search product',
+    'select_customer' => 'Select Customer',
 
     // Orders
     'pending_order_list' => 'Pending Order List',

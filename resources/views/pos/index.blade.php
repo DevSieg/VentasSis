@@ -14,7 +14,7 @@
                 </div>
             @endif
             <div>
-                <h4 class="mb-3">Point of Sale</h4>
+                <h4 class="mb-3">{{ __('messages.point_of_sale') }}</h4>
             </div>
         </div>
 
@@ -22,11 +22,11 @@
             <table class="table">
                 <thead>
                     <tr class="ligth">
-                        <th scope="col">Name</th>
-                        <th scope="col">QTY</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">SubTotal</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">{{ __('messages.name') }}</th>
+                        <th scope="col">{{ __('messages.qty') }}</th>
+                        <th scope="col">{{ __('messages.price') }}</th>
+                        <th scope="col">{{ __('messages.subtotal') }}</th>
+                        <th scope="col">{{ __('messages.action') }}</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,16 +56,16 @@
 
             <div class="container row text-center">
                 <div class="form-group col-sm-6">
-                    <p class="h4 text-primary">Quantity: {{ Cart::count() }}</p>
+                    <p class="h4 text-primary">{{ __('messages.quantity') }}: {{ Cart::count() }}</p>
                 </div>
                 <div class="form-group col-sm-6">
-                    <p class="h4 text-primary">Subtotal: {{ Cart::subtotal() }}</p>
+                    <p class="h4 text-primary">{{ __('messages.subtotal') }}: {{ Cart::subtotal() }}</p>
                 </div>
                 <div class="form-group col-sm-6">
-                    <p class="h4 text-primary">Vat: {{ Cart::tax() }}</p>
+                    <p class="h4 text-primary">{{ __('messages.vat') }}: {{ Cart::tax() }}</p>
                 </div>
                 <div class="form-group col-sm-6">
-                    <p class="h4 text-primary">Total: {{ Cart::total() }}</p>
+                    <p class="h4 text-primary">{{ __('messages.total') }}: {{ Cart::total() }}</p>
                 </div>
             </div>
 
@@ -75,7 +75,7 @@
                     <div class="col-md-12">
                         <div class="input-group">
                             <select class="form-control" id="customer_id" name="customer_id">
-                                <option selected="" disabled="">-- Select Customer --</option>
+                                <option selected="" disabled="">-- {{ __('messages.select_customer') }} --</option>
                                 @foreach ($customers as $customer)
                                     <option value="{{ $customer->id }}">{{ $customer->name }}</option>
                                 @endforeach
@@ -89,8 +89,8 @@
                     </div>
                     <div class="col-md-12 mt-4">
                         <div class="d-flex flex-wrap align-items-center justify-content-center">
-                            <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">Add Customer</a>
-                            <button type="submit" class="btn btn-success add-list mx-1">Create Invoice</button>
+                            <a href="{{ route('customers.create') }}" class="btn btn-primary add-list mx-1">{{ __('messages.add_customer') }}</a>
+                            <button type="submit" class="btn btn-success add-list mx-1">{{ __('messages.create_invoice') }}</button>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                     <form action="#" method="get">
                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                             <div class="form-group row">
-                                <label for="row" class="align-self-center mx-2">Row:</label>
+                                <label for="row" class="align-self-center mx-2">{{ __('messages.row') }}:</label>
                                 <div>
                                     <select class="form-control" name="row">
                                         <option value="10" @if(request('row') == '10')selected="selected"@endif>10</option>
@@ -115,9 +115,9 @@
                             </div>
 
                             <div class="form-group row">
-                                <label class="control-label col-sm-3 align-self-center" for="search">Search:</label>
+                                <label class="control-label col-sm-3 align-self-center" for="search">{{ __('messages.search') }}:</label>
                                 <div class="input-group col-sm-8">
-                                    <input type="text" id="search" class="form-control" name="search" placeholder="Search product" value="{{ request('search') }}">
+                                    <input type="text" id="search" class="form-control" name="search" placeholder={{ __('messages.search_product') }} value="{{ request('search') }}">
                                     <div class="input-group-append">
                                         <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
                                         <a href="{{ route('products.index') }}" class="input-group-text bg-danger"><i class="fa-solid fa-trash"></i></a>
@@ -133,10 +133,10 @@
                             <thead class="bg-white text-uppercase">
                                 <tr class="ligth ligth-data">
                                     <th>No.</th>
-                                    <th>Photo</th>
-                                    <th>@sortablelink('product_name', 'name')</th>
-                                    <th>@sortablelink('selling_price', 'price')</th>
-                                    <th>Action</th>
+                                    <th>{{ __('messages.photo') }}</th>
+                                    <th>@sortablelink('product_name', __('messages.name'))</th>
+                                    <th>@sortablelink('selling_price', __('messages.price'))</th>
+                                    <th>{{ __('messages.action') }}</th>
                                 </tr>
                             </thead>
                             <tbody class="ligth-body">
