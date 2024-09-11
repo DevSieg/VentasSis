@@ -21,6 +21,7 @@ return [
     'add_customer' => 'Agregar Cliente',
     'create_invoice' => 'Crear Factura',
     'search_product' => 'Buscar producto',
+    'search_customer' => 'Buscar Cliente',
     'search_category' => 'Buscar Categoria',
     'select_customer' => 'Selecciona cliente',
     'select_category' => 'Seleccionar Categoria',
@@ -150,8 +151,6 @@ return [
     'Role in Permissions' => 'Rol en Permisos',
     'Users' => 'Usuarios',
     'Backup Database' => 'Respaldo de la Base de Datos',
-
-
-
-    
+    'phone' => 'celular',
+    'type' => 'Tipo',
 ];

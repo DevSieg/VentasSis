@@ -85,7 +85,7 @@ return [
     'account_number' => 'Account Number',
     'bank_name' => 'Bank Name',
     'bank_branch' => 'Bank Branch',
-
+    'search_customer' => 'Search Customer',
     // Suppliers
     'supplier_list' => 'Supplier List',
     'add_supplier' => 'Add Supplier',
@@ -149,4 +149,6 @@ return [
     'Role in Permissions' => 'Role in Permissions',
     'Users' => 'Users',
     'Backup Database' => 'Backup Database',
+    'phone' => 'phone',
+    'type' => 'Type',
 ];
