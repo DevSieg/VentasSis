@@ -21,22 +21,33 @@ return [
     'add_customer' => 'Add Customer',
     'create_invoice' => 'Create Invoice',
     'search_product' => 'Search product',
+    'search_category' => 'Search Category',
     'select_customer' => 'Select Customer',
+    'select_category' => 'Select Category',
+    'select_supplier' => 'Select Supplier',
+    'product_store' => 'Product Store',
 
     // Orders
     'pending_order_list' => 'Pending Order List',
+    'complete_order_list' =>'Complete Order List',
     'invoice_no' => 'Invoice No',
     'order_date' => 'Order Date',
     'payment' => 'Payment',
+    'pay_due' => 'Pay Due',
     'status' => 'Status',
     'clear_search' => 'Clear Search',
+    'search_order' => 'Search Order',
+    'details' => 'Details',
+    'pending'=> 'Pending',
+    'print' => 'Print',
 
     // Stock Management
     'stock_product_list' => 'Stock Product List',
     'category' => 'Category',
     'supplier' => 'Supplier',
     'stock' => 'Stock',
-
+    'detalles_stock_1' =>'A stock product dashboard lets you easily gather and visualize stock product data from optimizing',
+    'detalles_stock_2' => ' the stock product experience, ensuring stock product retention.',
     // Products
     'product_list' => 'Product List',
     'add_product' => 'Add Product',
@@ -64,6 +75,7 @@ return [
     'employee_vacation' => 'Employee Vacation',
     'employee_city' => 'Employee City',
     'employee_address' => 'Employee Address',
+    'employee_search' => 'Search Employee',
 
     // Customers
     'customer_list' => 'Customer List',
@@ -86,6 +98,7 @@ return [
     'photo' => 'Photo',
     'status' => 'Status',
     'create_category' => 'Create Category',
+    'category_list' => 'Category List',
 
 
 
@@ -114,6 +127,7 @@ return [
     'Pending Orders' => 'Pending Orders',
     'Complete Orders' => 'Complete Orders',
     'Pending Due' => 'Pending Due',
+    'due' => 'Due',
     'Stock Management' => 'Stock Management',
     'Products' => 'Products',
     'Add Product' => 'Add Product',

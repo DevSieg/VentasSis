@@ -77,7 +77,7 @@
                     <ul id="products" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                         <li class="{{ Request::is(['products']) ? 'active' : '' }}">
                             <a href="{{ route('products.index') }}">
-                                <i class="fa-solid fa-arrow-right"></i><span>{{ __('messages.messages.Products') }}</span>
+                                <i class="fa-solid fa-arrow-right"></i><span>{{ __('messages.Products') }}</span>
                             </a>
                         </li>
                         <li class="{{ Request::is(['products/create']) ? 'active' : '' }}">

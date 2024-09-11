@@ -14,10 +14,10 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Complete Order List</h4>
+                    <h4 class="mb-3">{{__('messages.complete_order_list')}}</h4>
                 </div>
                 <div>
-                    <a href="{{ route('order.pendingOrders') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>Clear Search</a>
+                    <a href="{{ route('order.pendingOrders') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>{{__('messages.clear_search')}}</a>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
             <form action="{{ route('order.completeOrders') }}" method="get">
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
                     <div class="form-group row">
-                        <label for="row" class="col-sm-3 align-self-center">Row:</label>
+                        <label for="row" class="col-sm-3 align-self-center">{{__('messages.row')}}:</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="row">
                                 <option value="10" @if(request('row') == '10')selected="selected"@endif>10</option>
@@ -38,10 +38,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">Search:</label>
+                        <label class="control-label col-sm-3 align-self-center" for="search">{{__('messages.search')}}:</label>
                         <div class="col-sm-8">
                             <div class="input-group">
-                                <input type="text" id="search" class="form-control" name="search" placeholder="Search order" value="{{ request('search') }}">
+                                <input type="text" id="search" class="form-control" name="search" placeholder={{__('messages.search_order')}} value="{{ request('search') }}">
                                 <div class="input-group-append">
                                     <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
                                 </div>
@@ -58,13 +58,13 @@
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
                             <th>No.</th>
-                            <th>Invoice No</th>
-                            <th>@sortablelink('customer.name', 'name')</th>
-                            <th>@sortablelink('order_date', 'order date')</th>
-                            <th>@sortablelink('pay')</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th>{{__('messages.invoice_no')}}</th>
+                            <th>@sortablelink('customer.name',__('messages.name'))</th>
+                            <th>@sortablelink('order_date',__('messages.order_date'))</th>
+                            <th>{{__('messages.payment')}}</th>
+                            <th>@sortablelink('total')</th>
+                            <th>{{__('messages.status')}}</th>
+                            <th>{{__('messages.action')}}</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">
@@ -82,10 +82,10 @@
                             <td>
                                 <div class="d-flex align-items-center list-action">
                                     <a class="btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Details" href="{{ route('order.orderDetails', $order->id) }}">
-                                        Details
+                                        {{__('messages.details')}}
                                     </a>
                                     <a class="btn btn-success mr-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print" href="{{ route('order.invoiceDownload', $order->id) }}">
-                                        Print
+                                        {{__('message.print')}}
                                     </a>
                                 </div>
                             </td>

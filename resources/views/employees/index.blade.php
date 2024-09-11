@@ -14,13 +14,13 @@
             @endif
             <div class="d-flex flex-wrap align-items-center justify-content-between mb-4">
                 <div>
-                    <h4 class="mb-3">Employee List</h4>
+                    <h4 class="mb-3">{{__('messages.employee_list')}}</h4>
                     <p class="mb-0">A employee dashboard lets you easily gather and visualize employee data from optimizing <br>
                         the employee experience, ensuring employee retention. </p>
                 </div>
                 <div>
-                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>Add Employee</a>
-                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>Clear Search</a>
+                <a href="{{ route('employees.create') }}" class="btn btn-primary add-list"><i class="fa-solid fa-plus mr-3"></i>{{__('messages.add_employee')}}</a>
+                <a href="{{ route('employees.index') }}" class="btn btn-danger add-list"><i class="fa-solid fa-trash mr-3"></i>{{__('messages.clear_search')}}</a>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
             <form action="{{ route('employees.index') }}" method="get">
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
                     <div class="form-group row">
-                        <label for="row" class="col-sm-3 align-self-center">Row:</label>
+                        <label for="row" class="col-sm-3 align-self-center">{{__('messages.row')}}:</label>
                         <div class="col-sm-9">
                             <select class="form-control" name="row">
                                 <option value="10" @if(request('row') == '10')selected="selected"@endif>10</option>
@@ -41,10 +41,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="control-label col-sm-3 align-self-center" for="search">Search:</label>
+                        <label class="control-label col-sm-3 align-self-center" for="search">{{__('messages.search')}}:</label>
                         <div class="col-sm-8">
                             <div class="input-group">
-                                <input type="text" id="search" class="form-control" name="search" placeholder="Search employee" value="{{ request('search') }}">
+                                <input type="text" id="search" class="form-control" name="search" placeholder={{__('messages.employee_search')}} value="{{ request('search') }}">
                                 <div class="input-group-append">
                                     <button type="submit" class="input-group-text bg-primary"><i class="fa-solid fa-magnifying-glass font-size-20"></i></button>
                                 </div>
@@ -62,13 +62,13 @@
                     <thead class="bg-white text-uppercase">
                         <tr class="ligth ligth-data">
                             <th>No.</th>
-                            <th>Photo</th>
-                            <th>@sortablelink('name')</th>
-                            <th>@sortablelink('email')</th>
-                            <th>@sortablelink('phone')</th>
-                            <th>@sortablelink('salary')</th>
-                            <th>@sortablelink('city')</th>
-                            <th>Action</th>
+                            <th>{{__('messages.photo')}}</th>
+                            <th>@sortablelink('name',__('messages.name'))</th>
+                            <th>@sortablelink('email',__('messages.employee_email'))</th>
+                            <th>@sortablelink('phone',__('messages.employee_phone'))</th>
+                            <th>@sortablelink('salary',__('messages.employee_salary'))</th>
+                            <th>@sortablelink('city',__('messages.employee_city'))</th>
+                            <th>{{__('messages.action')}}</th>
                         </tr>
                     </thead>
                     <tbody class="ligth-body">

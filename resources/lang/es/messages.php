@@ -21,21 +21,33 @@ return [
     'add_customer' => 'Agregar Cliente',
     'create_invoice' => 'Crear Factura',
     'search_product' => 'Buscar producto',
+    'search_category' => 'Buscar Categoria',
     'select_customer' => 'Selecciona cliente',
+    'select_category' => 'Seleccionar Categoria',
+    'select_supplier' => 'Seleccionar Proovedor',
+    'product_store' => 'Tienda de Productos',
 
     // Orders
     'pending_order_list' => 'Lista de Pedidos Pendientes',
+    'complete_order_list' =>'Lista de Pedidos Completadas',
     'invoice_no' => 'Factura No',
     'order_date' => 'Fecha de Pedido',
     'payment' => 'Pago',
+    'pay_due' => 'Pagar Deuda',
     'status' => 'Estado',
     'clear_search' => 'Borrar Búsqueda',
+    'search_order' => 'Buscar pedido',
+    'details' => 'Detalles',
+    'pending'=> 'Pendiente',
+    'print' => 'Imprimir',
 
     // Stock Management
     'stock_product_list' => 'Lista de Productos en Stock',
     'category' => 'Categoría',
     'supplier' => 'Proveedor',
     'stock' => 'Existencias',
+    'detalles_stock_1' =>'Un panel de control de productos en stock le permite recopilar y visualizar fácilmente datos de productos en stock optimizando',
+    'detalles_stock_2' => 'la experiencia del producto en stock, asegurando la retención del producto en stock.',
 
     // Products
     'product_list' => 'Lista de Productos',
@@ -64,6 +76,7 @@ return [
     'employee_vacation' => 'Vacaciones del Empleado',
     'employee_city' => 'Ciudad del Empleado',
     'employee_address' => 'Dirección del Empleado',
+    'employee_search' => 'Buscar Empleado',
 
     // Customers
     'customer_list' => 'Lista de Clientes',
@@ -86,6 +99,7 @@ return [
     'photo' => 'Foto',
     'status' => 'Estado',
     'create_category' => 'Crear Categoría',
+    'category_list' => 'Lista de Categorias',
 
 
 
@@ -93,6 +107,7 @@ return [
     'dashboard_info' => 'Tu panel te da vistas del rendimiento clave o del proceso de negocio.',
     'total_paid' => 'Total Pagado',
     'total_due' => 'Total Deuda',
+    'due' => 'Deuda',
     'complete_orders' => 'Órdenes Completadas',
     'overview' => 'Visión General',
     'revenue_vs_cost' => 'Ingresos Vs Costos',
