@@ -23,6 +23,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-list align-items-center">
+                        <!-- Language Selector -->
+                        <li class="nav-item">
+                            <div class="dropdown "  >
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{ strtoupper(app()->getLocale()) }}
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="languageDropdown" style="width: 30px;"> 
+                                    <a class="dropdown-item" href="{{ route('change_language', ['lang' => 'en']) }} " >English</a>
+                                    <a class="dropdown-item" href="{{ route('change_language', ['lang' => 'es']) }}">Español</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Language Selector -->
+
                         <li class="nav-item nav-icon search-content">
                             <a href="#" class="search-toggle rounded" id="dropdownSearch" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">

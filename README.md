@@ -31,7 +31,7 @@ Gestión de Punto de Venta y Facturación construido con Laravel 10 y MySql.
 1. **Clonar Repositorio o Descargar**
 
     ```bash
-    $ git clone https://github.com/yorchavez9/sistema-de-ventas-laravel.git
+    $ git clone https://github.com/DevSieg/VentasSis
     ```
 
 2. **Configuración**

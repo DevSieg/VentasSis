@@ -29,6 +29,14 @@ use App\Http\Controllers\Dashboard\UserController;
 */
 
 
+Route::get('change-language/{lang}', function ($lang) {
+    Session::put('lang', $lang);
+    return redirect()->back();
+})->name('change_language');
+
+
+
+
 Route::get('/', function () {
     return redirect('/dashboard');
 });
